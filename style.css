@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-size: 20px;
+}
+body{
+    background:linear-gradient(45deg, #6DFFF0,#5444A6);
+    background-size: 400% 400%;
+    animation: GradientBackground 10s ease infinite;
+}
+@keyframes GradientBackground{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+};
+.header{
+    height: 50px;
+}
+.header h1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 40px;
+}
+.result{
+    display:flex;
+    height: 130px;
+    color: white;
+    justify-content: center;
+}
+.kento_sum{
+    width:20vw;
+    padding: 20px;
+    text-align: center;
+}
+.ema_sum{
+    width:20vw;
+    padding: 20px;
+    text-align: center;
+}
+.sum_size {
+    font-size: 3em;
+}
+.form_erea{
+    height:130px;
+    padding: 20px 0;
+}
+.radio_box{
+    width: 50vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+input[type=radio]{
+    padding: 10px 20px;
+    display:none;
+}
+label:hover{
+    background-color:rgb(255, 255, 255,0.3)
+}
+input[type=radio]:checked + label{
+    background-color:rgb(255, 255, 255,0.3)
+}
+.label{
+    display: block;
+    margin: 5px;
+    width: 90px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    border-color: rgb(255, 255, 255,0.3);
+    line-height: 40px;
+    cursor: pointer;
+}
+.form_box{
+    text-align: center;
+}
+input[type=number]{
+    margin:5px 4px 10px 0;
+    padding: 0 20px;
+    width: 200px;
+    height: 42px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 255, 255,0.3);
+}
+input[type=number]:hover{
+    background-color: rgb(255, 255, 255,0.4);
+}
+input[type=number]::-webkit-inner-spin-button ,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+::placeholder{
+    color: rgb(128, 140, 151);
+}
+input:focus{
+    outline:none;
+}
+button{
+    height: 42px;
+    width: 80px;
+    background-color: aliceblue;
+    color: rgb(156, 169, 164);
+    padding: 0 10px;
+    border:none;
+}
+button:hover{
+    background-color: rgb(184, 232, 242);
+}
+.price{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+}
+.kento_price{
+    width: 20vw;
+}
+.ema_price{
+    width:20vw;
+}

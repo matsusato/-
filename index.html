@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>レシート計算システム</title>
+</head>
+<body>
+    <header class="header">
+        <h1>計算くん</h1>
+    </header>
+    <main>
+    <div class="result">
+        <div class="kento_sum sum_size">
+            <h2>合計１</h2>
+            <p id="goukei">0</p>
+        </div>
+        <div class="ema_sum sum_size">
+            <h2>合計2</h2>
+            <p id="goukei2">0</p>
+        </div>
+    </div>
+    <div class="form_erea">
+    <form name="price_form" onsubmit="return form_input()">
+        <div class="radio_box">
+        <input id="radio_style" type="radio" name="radio" value="matsu" checked><label for="radio_style" class="label">matsu</label>
+        <input id="radio_style2" type="radio" name="radio" value="ema"><label for="radio_style2" class="label">ema</label>
+        <input id="radio_style3" type="radio" name="radio" value="共通"><label for="radio_style3" class="label">共通</label>
+        </div>
+        <div class="form_box">
+        <input type="number" name="soloprice" placeholder="金額を入力">
+        <button type="submit" id="click">SUBMIT</button>
+        </div>
+    </form>
+</div>
+    <div class="price">
+        <div class="kento_price">
+        <ul id="kento_id">
+        </ul>
+        </div>
+        <div class="ema_price">
+        <ul id="ema_id">
+        </ul>
+        </div>
+    </div>
+</main>
+    <script src="./keisan.js"></script>
+</body>
+</html>
